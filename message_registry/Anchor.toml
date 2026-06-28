@@ -1,0 +1,22 @@
+skip_local_validator = true
+
+[toolchain]
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+message_registry = "DBfznUhc47xnK5B1wC6zWcqtZzWqu2MTNZckWBi6w5fX"
+
+[programs.devnet]
+message_registry = "DBfznUhc47xnK5B1wC6zWcqtZzWqu2MTNZckWBi6w5fX"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]
